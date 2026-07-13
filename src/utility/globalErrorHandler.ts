@@ -1,6 +1,11 @@
-import type { NextFunction, Request, Response } from "express";
+import type {
+  ErrorRequestHandler,
+  NextFunction,
+  Request,
+  Response,
+} from "express";
 
-const globalErrorHandler = (
+const globalErrorHandler: ErrorRequestHandler = (
   err: any,
   req: Request,
   res: Response,

@@ -17,7 +17,6 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.use("/api/user", userRouter);
-
 app.use(globalErrorHandler);
 
 export default app;

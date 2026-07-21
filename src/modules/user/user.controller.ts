@@ -29,6 +29,7 @@ const createUser = catchAsync(async (req: Request, res: Response) => {
 
 // get all user controller
 const getAllUser = catchAsync(async (req: Request, res: Response) => {
+  console.log("User controller ===>", req.user);
   const result = await userService.getAllUserFromDB();
   sendResponse(res, {
     statusCode: 200,

@@ -1,2 +1,504 @@
 2026-07-21 23:53:40 [INFO] POST /api/auth/login 200 - 1793ms
 2026-07-21 23:58:02 [INFO] POST /api/auth/login 200 - 3390ms
+2026-07-22 00:09:10 [INFO] GET /api/user/get-all-users 304 - 279ms
+2026-07-22 00:09:13 [INFO] GET /api/user/get-all-users 304 - 255ms
+2026-07-22 00:10:22 [INFO] GET /api/user/get-all-users 304 - 250ms
+2026-07-22 00:11:14 [INFO] GET /api/user/get-all-users 304 - 256ms
+2026-07-22 00:11:40 [INFO] GET /api/user/get-all-users 304 - 251ms
+2026-07-22 00:11:43 [INFO] GET /api/user/get-all-users 304 - 249ms
+2026-07-22 00:12:24 [INFO] POST /api/auth/login 200 - 2128ms
+2026-07-22 00:13:29 [INFO] GET /api/user/get-all-users 200 - 1952ms
+2026-07-22 00:13:47 [INFO] GET /api/user/get-all-users 200 - 250ms
+2026-07-22 00:16:19 [INFO] GET /api/user/get-all-users 200 - 1988ms
+2026-07-22 00:16:30 [INFO] GET /api/user/get-all-users 401 - 1ms
+2026-07-22 00:16:32 [ERROR] 
+    Message : Cannot set headers after they are sent to the client
+    Status  : undefined
+    Stack   : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:647:11)
+    at ServerResponse.header (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:686:10)
+    at ServerResponse.send (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:163:12)
+    at ServerResponse.json (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:252:15)
+    at sendResponse (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\senderResponse.ts:12:31)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.controller.ts:33:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 00:16:47 [INFO] GET /api/user/get-all-users 401 - 1ms
+2026-07-22 00:16:49 [ERROR] 
+    Message : Cannot set headers after they are sent to the client
+    Status  : undefined
+    Stack   : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:647:11)
+    at ServerResponse.header (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:686:10)
+    at ServerResponse.send (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:163:12)
+    at ServerResponse.json (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:252:15)
+    at sendResponse (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\senderResponse.ts:12:31)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.controller.ts:33:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 00:17:13 [INFO] GET /api/user/get-all-users 200 - 1943ms
+2026-07-22 00:17:16 [INFO] GET /api/user/get-all-users 401 - 0ms
+2026-07-22 00:17:16 [ERROR] 
+    Message : Cannot set headers after they are sent to the client
+    Status  : undefined
+    Stack   : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:647:11)
+    at ServerResponse.header (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:686:10)
+    at ServerResponse.send (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:163:12)
+    at ServerResponse.json (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\express\lib\response.js:252:15)
+    at sendResponse (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\senderResponse.ts:12:31)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.controller.ts:33:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 00:22:20 [INFO] GET /api/user/get-all-users 200 - 242ms
+2026-07-22 00:22:40 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:11:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 00:22:40 [INFO] GET /api/user/get-all-users 401 - 2ms
+2026-07-22 00:26:46 [INFO] GET /api/user/get-all-users 200 - 245ms
+2026-07-22 00:29:19 [INFO] GET /api/user/get-all-users 200 - 496ms
+2026-07-22 00:31:34 [ERROR] 
+    Message : invalid signature
+    Status  : undefined
+    Stack   : JsonWebTokenError: invalid signature
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:101:10)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:17:29)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+  
+2026-07-22 00:31:34 [INFO] GET /api/user/get-all-users 500 - 7ms
+2026-07-22 00:31:51 [INFO] GET /api/user/get-all-users 200 - 1924ms
+2026-07-22 00:33:06 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:32:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 00:33:06 [INFO] GET /api/user/get-all-users 401 - 1768ms
+2026-07-22 00:33:25 [ERROR] 
+    Message : Unauthorized access kdjflksdjflkdsj
+    Status  : 401
+    Stack   : Error: Unauthorized access kdjflksdjflkdsj
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:32:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 00:33:25 [INFO] GET /api/user/get-all-users 401 - 250ms
+2026-07-22 00:33:41 [INFO] POST /api/auth/login 200 - 310ms
+2026-07-22 00:33:46 [INFO] GET /api/user/get-single-user/12 200 - 240ms
+2026-07-22 00:33:51 [ERROR] 
+    Message : Unauthorized access 
+    Status  : 401
+    Stack   : Error: Unauthorized access 
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:32:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 00:33:51 [INFO] GET /api/user/get-all-users 401 - 243ms
+2026-07-22 00:34:12 [INFO] GET /api/user/get-all-users 200 - 2048ms
+2026-07-22 00:44:32 [ERROR] 
+    Message : invalid token
+    Status  : undefined
+    Stack   : JsonWebTokenError: invalid token
+    at module.exports [as verify] (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:82:17)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:18:29)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+  
+2026-07-22 00:44:32 [INFO] GET /api/user/get-all-users 500 - 6ms
+2026-07-22 00:44:43 [INFO] POST /api/auth/login 200 - 2046ms
+2026-07-22 00:45:14 [INFO] GET /api/user/get-all-users 200 - 1997ms
+2026-07-22 00:54:41 [INFO] GET /api/user/get-all-users 200 - 1983ms
+2026-07-22 00:55:07 [INFO] GET /api/user/get-all-users 200 - 2307ms
+2026-07-22 00:55:27 [INFO] POST /api/auth/login 200 - 317ms
+2026-07-22 00:55:32 [INFO] GET /api/user/get-all-users 200 - 490ms
+2026-07-22 00:56:50 [INFO] GET /api/user/get-all-users 200 - 496ms
+2026-07-22 00:58:21 [INFO] GET /api/user/get-all-users 200 - 506ms
+2026-07-22 01:00:25 [INFO] GET /api/user/get-all-users 200 - 493ms
+2026-07-22 01:00:41 [INFO] GET /api/user/get-all-users 200 - 472ms
+2026-07-22 01:09:11 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:09:11 [INFO] GET /api/user/get-all-users 401 - 288ms
+2026-07-22 01:10:13 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:10:13 [INFO] GET /api/user/get-all-users 401 - 247ms
+2026-07-22 01:10:39 [INFO] POST /api/auth/login 200 - 1794ms
+2026-07-22 01:10:55 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:10:55 [INFO] GET /api/user/get-all-users 401 - 1690ms
+2026-07-22 01:11:44 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:11:44 [INFO] GET /api/user/get-all-users 401 - 1703ms
+2026-07-22 01:12:08 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:12:08 [INFO] GET /api/user/get-all-users 401 - 1753ms
+2026-07-22 01:12:29 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:12:29 [INFO] GET /api/user/get-all-users 401 - 249ms
+2026-07-22 01:13:16 [INFO] POST /api/user/create-user 201 - 2028ms
+2026-07-22 01:13:48 [INFO] POST /api/auth/login 200 - 1752ms
+2026-07-22 01:14:03 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:14:03 [INFO] GET /api/user/get-all-users 401 - 2103ms
+2026-07-22 01:14:27 [ERROR] 
+    Message : Unauthorized accessdsfdsfsdfdffdg
+    Status  : 401
+    Stack   : Error: Unauthorized accessdsfdsfsdfdffdg
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:14:27 [INFO] GET /api/user/get-all-users 401 - 243ms
+2026-07-22 01:15:07 [ERROR] 
+    Message : Unauthorized accessdsfdsfsdfdffdg
+    Status  : 401
+    Stack   : Error: Unauthorized accessdsfdsfsdfdffdg
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:15:07 [INFO] GET /api/user/get-all-users 401 - 243ms
+2026-07-22 01:17:30 [INFO] GET /api/user/get-all-users 200 - 476ms
+2026-07-22 01:17:41 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 01:17:41 [INFO] GET /api/user/get-all-users 401 - 2ms
+2026-07-22 01:18:14 [INFO] POST /api/user/create-user 201 - 2253ms
+2026-07-22 01:18:33 [INFO] POST /api/auth/login 200 - 2008ms
+2026-07-22 01:18:52 [ERROR] 
+    Message : Unauthorized accessdsfdsfsdfdffdg
+    Status  : 401
+    Stack   : Error: Unauthorized accessdsfdsfsdfdffdg
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:40:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:18:52 [INFO] GET /api/user/get-all-users 401 - 1957ms
+2026-07-22 01:20:16 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:41:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:20:16 [INFO] GET /api/user/get-all-users 401 - 249ms
+2026-07-22 01:20:45 [INFO] POST /api/auth/login 200 - 312ms
+2026-07-22 01:21:00 [INFO] GET /api/user/get-all-users 200 - 2253ms
+2026-07-22 01:21:23 [INFO] POST /api/auth/login 200 - 2062ms
+2026-07-22 01:21:37 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:41:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 01:21:37 [INFO] GET /api/user/get-all-users 401 - 2013ms
+2026-07-22 01:32:04 [INFO] POST /api/auth/login 200 - 320ms
+2026-07-22 01:34:49 [INFO] POST /api/auth/login 200 - 1756ms
+2026-07-22 01:42:15 [INFO] POST /api/auth/login 200 - 3005ms
+2026-07-22 01:54:39 [INFO] POST /api/auth/refresh-token 200 - 5ms
+2026-07-22 01:56:42 [INFO] POST /api/auth/refresh-token 200 - 243ms
+2026-07-22 01:57:49 [ERROR] 
+    Message : Cannot read properties of undefined (reading '0')
+    Status  : undefined
+    Stack   : TypeError: Cannot read properties of undefined (reading '0')
+    at Object.generateRefreshToken (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\auth\auth.service.ts:64:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\auth\auth.controller.ts:26:18)
+  
+2026-07-22 01:57:49 [INFO] POST /api/auth/refresh-token 500 - 251ms
+2026-07-22 01:57:53 [ERROR] 
+    Message : Cannot read properties of undefined (reading '0')
+    Status  : undefined
+    Stack   : TypeError: Cannot read properties of undefined (reading '0')
+    at Object.generateRefreshToken (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\auth\auth.service.ts:64:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\auth\auth.controller.ts:26:18)
+  
+2026-07-22 01:57:53 [INFO] POST /api/auth/refresh-token 500 - 244ms
+2026-07-22 01:58:32 [INFO] POST /api/auth/refresh-token 200 - 251ms
+2026-07-22 01:59:24 [INFO] POST /api/auth/refresh-token 200 - 247ms
+2026-07-22 01:59:46 [INFO] POST /api/auth/refresh-token 200 - 248ms
+2026-07-22 02:00:16 [INFO] POST /api/auth/refresh-token 200 - 256ms
+2026-07-22 02:02:26 [INFO] POST /api/auth/refresh-token 200 - 1784ms
+2026-07-22 02:02:47 [INFO] POST /api/auth/refresh-token 200 - 1748ms
+2026-07-22 02:03:59 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 02:03:59 [INFO] GET /api/user/get-all-users 401 - 2ms
+2026-07-22 02:04:09 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:43:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 02:04:09 [INFO] GET /api/user/get-all-users 401 - 1829ms
+2026-07-22 02:04:13 [INFO] POST /api/auth/login 200 - 310ms
+2026-07-22 02:05:35 [ERROR] 
+    Message : jwt malformed
+    Status  : undefined
+    Stack   : JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:70:17)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:19:29)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+  
+2026-07-22 02:05:35 [INFO] GET /api/user/get-all-users 500 - 1ms
+2026-07-22 02:05:38 [ERROR] 
+    Message : jwt malformed
+    Status  : undefined
+    Stack   : JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:70:17)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:19:29)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+  
+2026-07-22 02:05:38 [INFO] GET /api/user/get-all-users 500 - 1ms
+2026-07-22 02:05:39 [ERROR] 
+    Message : jwt malformed
+    Status  : undefined
+    Stack   : JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:70:17)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:19:29)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+  
+2026-07-22 02:05:39 [INFO] GET /api/user/get-all-users 500 - 1ms
+2026-07-22 02:05:49 [INFO] POST /api/auth/login 200 - 1786ms
+2026-07-22 02:06:04 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:43:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 02:06:04 [INFO] GET /api/user/get-all-users 401 - 1722ms
+2026-07-22 02:06:18 [ERROR] 
+    Message : Unauthorized access
+    Status  : 401
+    Stack   : Error: Unauthorized access
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:43:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 02:06:18 [INFO] GET /api/user/get-all-users 401 - 1776ms
+2026-07-22 02:06:56 [INFO] POST /api/auth/login 200 - 1795ms
+2026-07-22 02:07:08 [INFO] GET /api/user/get-all-users 200 - 1937ms
+2026-07-22 02:19:13 [ERROR] 
+    Message : Authentication token is required
+    Status  : 401
+    Stack   : Error: Authentication token is required
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 02:19:13 [INFO] GET /api/user/get-all-users 401 - 6ms
+2026-07-22 02:19:29 [INFO] POST /api/auth/login 200 - 1848ms
+2026-07-22 02:19:35 [INFO] GET /api/user/get-all-users 200 - 505ms
+2026-07-22 02:19:41 [INFO] GET /api/user/get-all-users 200 - 496ms
+2026-07-22 02:20:07 [ERROR] 
+    Message : User not exists
+    Status  : 404
+    Stack   : Error: User not exists
+    at Object.loginUserFromDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\auth\auth.service.ts:20:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\auth\auth.controller.ts:7:18)
+  
+2026-07-22 02:20:07 [INFO] POST /api/auth/login 404 - 1710ms
+2026-07-22 02:20:16 [INFO] POST /api/auth/login 200 - 310ms
+2026-07-22 02:20:25 [INFO] GET /api/user/get-all-users 200 - 487ms
+2026-07-22 02:20:30 [ERROR] 
+    Message : Authentication token is required
+    Status  : 401
+    Stack   : Error: Authentication token is required
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 02:20:30 [INFO] GET /api/user/get-all-users 401 - 1ms
+2026-07-22 02:20:41 [ERROR] 
+    Message : invalid signature
+    Status  : undefined
+    Stack   : JsonWebTokenError: invalid signature
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:101:10)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:19:29)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+  
+2026-07-22 02:20:41 [INFO] GET /api/user/get-all-users 500 - 1ms
+2026-07-22 02:20:44 [ERROR] 
+    Message : invalid signature
+    Status  : undefined
+    Stack   : JsonWebTokenError: invalid signature
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\jsonwebtoken\verify.js:101:10)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:19:29)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+  
+2026-07-22 02:20:44 [INFO] GET /api/user/get-all-users 500 - 1ms
+2026-07-22 02:20:52 [INFO] GET /api/user/get-all-users 200 - 1913ms
+2026-07-22 02:21:18 [INFO] POST /api/auth/login 200 - 1771ms
+2026-07-22 02:21:23 [INFO] GET /api/user/get-all-users 200 - 487ms
+2026-07-22 02:21:30 [INFO] GET /api/user/get-all-users 200 - 488ms
+2026-07-22 02:21:52 [ERROR] 
+    Message : You are not authorized to access this resource
+    Status  : 403
+    Stack   : Error: You are not authorized to access this resource
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:43:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 02:21:52 [INFO] GET /api/user/get-all-users 403 - 1676ms
+2026-07-22 02:37:25 [INFO] POST /api/auth/logout 200 - 4ms
+2026-07-22 02:37:35 [ERROR] 
+    Message : You are not authorized to access this resource
+    Status  : 403
+    Stack   : Error: You are not authorized to access this resource
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:43:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 02:37:35 [INFO] GET /api/user/get-all-users 403 - 1766ms
+2026-07-22 02:37:44 [INFO] POST /api/auth/login 200 - 311ms
+2026-07-22 02:37:48 [ERROR] 
+    Message : You are not authorized to access this resource
+    Status  : 403
+    Stack   : Error: You are not authorized to access this resource
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:43:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 02:37:48 [INFO] GET /api/user/get-all-users 403 - 242ms
+2026-07-22 02:38:03 [ERROR] 
+    Message : You are not authorized to access this resource
+    Status  : 403
+    Stack   : Error: You are not authorized to access this resource
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:43:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 02:38:03 [INFO] GET /api/user/get-all-users 403 - 1689ms
+2026-07-22 02:38:21 [INFO] POST /api/auth/login 200 - 1870ms
+2026-07-22 02:38:34 [INFO] GET /api/user/get-all-users 200 - 2060ms
+2026-07-22 02:38:50 [INFO] POST /api/auth/logout 200 - 1ms
+2026-07-22 02:39:06 [INFO] GET /api/user/get-all-users 200 - 1905ms
+2026-07-22 02:39:14 [INFO] GET /api/user/get-all-users 200 - 472ms

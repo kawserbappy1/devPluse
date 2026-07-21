@@ -19,7 +19,6 @@ import catchAsync from "../../utility/catchAsync";
 // };
 const createUser = catchAsync(async (req: Request, res: Response) => {
   const result = await userService.createUserToDB(req.body);
-
   sendResponse(res, {
     statusCode: 201,
     success: true,
@@ -40,6 +39,7 @@ const getAllUser = catchAsync(async (req: Request, res: Response) => {
 });
 
 // get single user controller
+
 // const getSingleUser = async (
 //   req: Request,
 //   res: Response,
@@ -68,8 +68,21 @@ const getSingleUser = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+
+// update user to database
+const updateUser = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await userService.updateUserInfo(id as string, req.body);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: "User updated successfully",
+    data: result,
+  });
+});
 export const userController = {
   createUser,
   getAllUser,
   getSingleUser,
+  updateUser,
 };

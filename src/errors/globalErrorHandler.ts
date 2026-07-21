@@ -1,7 +1,7 @@
 import type { ErrorRequestHandler } from "express";
+import logger from "../utility/logger";
 
 const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
-  console.log(err); // 👈 Add this
   let statusCode = 500;
   let message = "Internal Server Error";
 
@@ -16,7 +16,11 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
     statusCode = err.statusCode;
     message = err.message;
   }
-
+  logger.error(`
+    Message : ${err.message}
+    Status  : ${err.statusCode}
+    Stack   : ${err.stack}
+  `);
   res.status(statusCode).json({
     success: false,
     message,

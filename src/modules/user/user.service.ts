@@ -96,10 +96,30 @@ const updateUserInfo = async (id: string, payload: Partial<IUser>) => {
   const { password: _, ...user } = result.rows[0];
   return user;
 };
+const deleteUserFromDatabase = async (id: string) => {
+  // 1.check user is exist
+  const existingUser = await pool.query(
+    `
+      SELECT id FROM users WHERE id = $1
+    `,
+    [id],
+  );
+  if (existingUser.rows.length === 0) {
+    throw new AppError(404, "User not Found");
+  }
 
+  const result = await pool.query(
+    `
+    DELETE FROM users WHERE id=$1
+    `,
+    [id],
+  );
+  return result;
+};
 export const userService = {
   createUserToDB,
   getAllUserFromDB,
   getSingleUserFromDB,
   updateUserInfo,
+  deleteUserFromDatabase,
 };

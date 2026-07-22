@@ -1061,3 +1061,28 @@
   
 2026-07-22 18:01:55 [INFO] POST /api/issue/create-issue 500 - 772ms
 2026-07-22 18:02:10 [INFO] POST /api/issue/create-issue 201 - 2734ms
+2026-07-22 18:21:56 [INFO] POST /api/issue/get-all-issue 404 - 3ms
+2026-07-22 18:22:03 [INFO] GET /api/issue/get-all-issue 200 - 1730ms
+2026-07-22 18:29:59 [ERROR] 
+    Message : there is no parameter $1
+    Status  : undefined
+    Stack   : error: there is no parameter $1
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.getAllIssuesFromDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:34:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:27:18)
+  
+2026-07-22 18:29:59 [INFO] GET /api/issue/get-all-issue 500 - 519ms
+2026-07-22 18:30:14 [INFO] POST /api/auth/login 200 - 2302ms
+2026-07-22 18:30:43 [ERROR] 
+    Message : there is no parameter $1
+    Status  : undefined
+    Stack   : error: there is no parameter $1
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.getAllIssuesFromDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:34:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:27:18)
+  
+2026-07-22 18:30:43 [INFO] GET /api/issue/get-all-issue 500 - 1998ms
+2026-07-22 18:32:24 [INFO] GET /api/issue/get-all-issue 200 - 497ms
+2026-07-22 18:33:03 [INFO] GET /api/issue/get-all-issue 200 - 478ms

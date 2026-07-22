@@ -10,5 +10,10 @@ router.post(
   auth(USER_ROLE.contributor, USER_ROLE.maintainer),
   issueController.createIssue,
 );
+router.get(
+  "/get-all-issue",
+  auth(USER_ROLE.contributor, USER_ROLE.maintainer),
+  issueController.getAllIssues,
+);
 
 export const issuesRouter = router;

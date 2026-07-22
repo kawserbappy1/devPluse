@@ -1086,3 +1086,31 @@
 2026-07-22 18:30:43 [INFO] GET /api/issue/get-all-issue 500 - 1998ms
 2026-07-22 18:32:24 [INFO] GET /api/issue/get-all-issue 200 - 497ms
 2026-07-22 18:33:03 [INFO] GET /api/issue/get-all-issue 200 - 478ms
+2026-07-22 18:33:30 [INFO] GET /api/issue/get-all-issue 200 - 504ms
+2026-07-22 18:33:57 [INFO] GET /api/user/get-all-users 200 - 2013ms
+2026-07-22 18:34:09 [INFO] GET /api/issue/get-all-issue 200 - 1940ms
+2026-07-22 18:34:45 [INFO] POST /api/issue/create-issue 201 - 3522ms
+2026-07-22 18:34:55 [INFO] GET /api/issue/get-all-issue 200 - 488ms
+2026-07-22 18:48:35 [INFO] GET /api/issue/1 200 - 1749ms
+2026-07-22 18:52:33 [INFO] GET /api/issue/1 200 - 240ms
+2026-07-22 19:04:44 [ERROR] 
+    Message : bind message supplies 2 parameters, but prepared statement "" requires 1
+    Status  : undefined
+    Stack   : error: bind message supplies 2 parameters, but prepared statement "" requires 1
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.getSingleIssue (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:46:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:42:18)
+  
+2026-07-22 19:04:44 [INFO] GET /api/issue/1 500 - 556ms
+2026-07-22 19:06:12 [ERROR] 
+    Message : Issue not found
+    Status  : 404
+    Stack   : Error: Issue not found
+    at Object.getSingleIssue (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:54:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:42:18)
+  
+2026-07-22 19:06:12 [INFO] GET /api/issue/1 404 - 509ms
+2026-07-22 19:06:19 [INFO] GET /api/issue/20 200 - 493ms
+2026-07-22 19:07:04 [INFO] GET /api/issue/25 200 - 2661ms

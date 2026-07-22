@@ -39,7 +39,22 @@ const getAllIssuesFromDB = async (repoterId: number) => {
   );
   return result.rows;
 };
+
+const getSingleIssue = async (id: number, repoterId: number) => {
+  const result = await pool.query(
+    `
+    SELECT * FROM issues WHERE id=$1 AND reporter_id = $2
+    
+    `,
+    [id, repoterId],
+  );
+  if (result.rows.length === 0) {
+    throw new AppError(404, "Issue not found");
+  }
+  return result.rows[0];
+};
 export const issueServices = {
   createIssueIntoDB,
   getAllIssuesFromDB,
+  getSingleIssue,
 };

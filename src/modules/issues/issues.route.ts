@@ -15,5 +15,10 @@ router.get(
   auth(USER_ROLE.contributor, USER_ROLE.maintainer),
   issueController.getAllIssues,
 );
+router.get(
+  "/:id",
+  auth(USER_ROLE.contributor, USER_ROLE.maintainer),
+  issueController.getSingleIssue,
+);
 
 export const issuesRouter = router;

@@ -502,3 +502,562 @@
 2026-07-22 02:38:50 [INFO] POST /api/auth/logout 200 - 1ms
 2026-07-22 02:39:06 [INFO] GET /api/user/get-all-users 200 - 1905ms
 2026-07-22 02:39:14 [INFO] GET /api/user/get-all-users 200 - 472ms
+2026-07-22 02:41:52 [INFO] POST /api/auth/login 200 - 311ms
+2026-07-22 02:41:58 [INFO] GET /api/user/get-all-users 200 - 479ms
+2026-07-22 02:42:02 [INFO] POST /api/auth/logout 200 - 1ms
+2026-07-22 02:42:07 [INFO] GET /api/user/get-all-users 200 - 476ms
+2026-07-22 13:34:20 [ERROR] 
+    Message : Email already exists
+    Status  : 409
+    Stack   : Error: Email already exists
+    at Object.createUserToDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.service.ts:16:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.controller.ts:21:18)
+  
+2026-07-22 13:34:20 [INFO] POST /api/user/create-user 409 - 2561ms
+2026-07-22 14:10:39 [ERROR] 
+    Message : Email already exists
+    Status  : 409
+    Stack   : Error: Email already exists
+    at Object.createUserToDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.service.ts:16:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.controller.ts:21:18)
+  
+2026-07-22 14:10:39 [INFO] POST /api/user/create-user 409 - 294ms
+2026-07-22 15:01:17 [ERROR] 
+    Message : Email already exists
+    Status  : 409
+    Stack   : Error: Email already exists
+    at Object.createUserToDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.service.ts:16:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.controller.ts:21:18)
+  
+2026-07-22 15:01:17 [INFO] POST /api/user/create-user 409 - 278ms
+2026-07-22 15:01:35 [INFO] POST /api/user/create-user 201 - 2059ms
+2026-07-22 15:02:23 [ERROR] 
+    Message : Authentication token is required
+    Status  : 401
+    Stack   : Error: Authentication token is required
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 15:02:23 [INFO] GET /api/user/get-all-users 401 - 2ms
+2026-07-22 15:02:32 [INFO] GET /api/user/get-single-user/12 200 - 2296ms
+2026-07-22 15:03:34 [ERROR] 
+    Message : Authentication token is required
+    Status  : 401
+    Stack   : Error: Authentication token is required
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at param (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:600:14)
+    at param (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:610:14)
+  
+2026-07-22 15:03:34 [INFO] GET /api/user/get-single-user/12 401 - 6ms
+2026-07-22 15:04:12 [INFO] PUT /api/user/update-user/5 200 - 2495ms
+2026-07-22 15:04:31 [INFO] PUT /api/user/update-user/12 200 - 2016ms
+2026-07-22 15:04:53 [INFO] PUT /api/user/update-user/3 200 - 2058ms
+2026-07-22 15:04:59 [INFO] PUT /api/user/update-user/3 200 - 504ms
+2026-07-22 15:05:12 [INFO] PUT /api/user/update-user/4 200 - 1981ms
+2026-07-22 15:05:44 [INFO] POST /api/user/create-user 201 - 1996ms
+2026-07-22 15:05:57 [ERROR] 
+    Message : Authentication token is required
+    Status  : 401
+    Stack   : Error: Authentication token is required
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 15:05:57 [INFO] GET /api/user/get-all-users 401 - 1ms
+2026-07-22 15:07:03 [ERROR] 
+    Message : Authentication token is required
+    Status  : 401
+    Stack   : Error: Authentication token is required
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at param (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:600:14)
+    at param (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:610:14)
+  
+2026-07-22 15:07:03 [INFO] PUT /api/user/update-user/4 401 - 6ms
+2026-07-22 15:07:20 [INFO] POST /api/auth/login 200 - 2270ms
+2026-07-22 15:07:42 [INFO] GET /api/user/get-all-users 200 - 2454ms
+2026-07-22 15:08:19 [INFO] GET /api/user/get-single-user/12 200 - 2943ms
+2026-07-22 15:08:28 [ERROR] 
+    Message : Authentication token is required
+    Status  : 401
+    Stack   : Error: Authentication token is required
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at param (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:600:14)
+    at param (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:610:14)
+  
+2026-07-22 15:08:28 [INFO] PUT /api/user/update-user/4 401 - 1ms
+2026-07-22 15:08:45 [INFO] PUT /api/user/update-user/4 200 - 2817ms
+2026-07-22 15:09:08 [INFO] PUT /api/user/update-user/4 200 - 3307ms
+2026-07-22 15:09:33 [ERROR] 
+    Message : Authentication token is required
+    Status  : 401
+    Stack   : Error: Authentication token is required
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:16:13)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at param (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:600:14)
+    at param (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:610:14)
+  
+2026-07-22 15:09:33 [INFO] DELETE /api/user/delete-user/13 401 - 0ms
+2026-07-22 15:10:00 [ERROR] 
+    Message : User not Found
+    Status  : 404
+    Stack   : Error: User not Found
+    at Object.deleteUserFromDatabase (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.service.ts:108:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\user\user.controller.ts:88:3)
+  
+2026-07-22 15:10:00 [INFO] DELETE /api/user/delete-user/13 404 - 2502ms
+2026-07-22 15:10:21 [INFO] DELETE /api/user/delete-user/17 201 - 2711ms
+2026-07-22 15:36:41 [INFO] DELETE /api/issue/create-issue 404 - 2ms
+2026-07-22 15:37:16 [INFO] POST /api/issue/create-issue 201 - 2ms
+2026-07-22 15:49:26 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:49:26 [INFO] POST /api/issue/create-issue 500 - 1841ms
+2026-07-22 15:49:46 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:49:46 [INFO] POST /api/issue/create-issue 500 - 2237ms
+2026-07-22 15:50:31 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:50:31 [INFO] POST /api/issue/create-issue 500 - 261ms
+2026-07-22 15:51:49 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:51:49 [INFO] POST /api/issue/create-issue 500 - 1747ms
+2026-07-22 15:52:04 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:52:04 [INFO] POST /api/issue/create-issue 500 - 259ms
+2026-07-22 15:52:18 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:52:18 [INFO] POST /api/issue/create-issue 500 - 1789ms
+2026-07-22 15:54:17 [INFO] POST /api/auth/login 200 - 1818ms
+2026-07-22 15:54:21 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:54:21 [INFO] POST /api/issue/create-issue 500 - 241ms
+2026-07-22 15:54:26 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:54:26 [INFO] POST /api/issue/create-issue 500 - 2256ms
+2026-07-22 15:54:40 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:54:40 [INFO] POST /api/issue/create-issue 500 - 2187ms
+2026-07-22 15:58:18 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:58:18 [INFO] POST /api/issue/create-issue 500 - 377ms
+2026-07-22 15:58:37 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 15:58:37 [INFO] POST /api/issue/create-issue 500 - 248ms
+2026-07-22 16:00:43 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 16:00:43 [INFO] POST /api/issue/create-issue 500 - 249ms
+2026-07-22 16:00:56 [INFO] POST /api/auth/login 200 - 1807ms
+2026-07-22 16:00:59 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 16:00:59 [INFO] POST /api/issue/create-issue 500 - 249ms
+2026-07-22 16:04:14 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 16:04:14 [INFO] POST /api/issue/create-issue 500 - 251ms
+2026-07-22 16:04:18 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 16:04:18 [INFO] POST /api/issue/create-issue 500 - 1752ms
+2026-07-22 16:04:31 [ERROR] 
+    Message : null value in column "reporter_id" of relation "issues" violates not-null constraint
+    Status  : undefined
+    Stack   : error: null value in column "reporter_id" of relation "issues" violates not-null constraint
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:18)
+  
+2026-07-22 16:04:31 [INFO] POST /api/issue/create-issue 500 - 258ms
+2026-07-22 16:10:36 [ERROR] 
+    Message : Cannot read properties of undefined (reading 'id')
+    Status  : undefined
+    Stack   : TypeError: Cannot read properties of undefined (reading 'id')
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:31)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:10:36 [INFO] POST /api/issue/create-issue 500 - 6ms
+2026-07-22 16:10:38 [ERROR] 
+    Message : Cannot read properties of undefined (reading 'id')
+    Status  : undefined
+    Stack   : TypeError: Cannot read properties of undefined (reading 'id')
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:7:31)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:10:38 [INFO] POST /api/issue/create-issue 500 - 1ms
+2026-07-22 16:15:59 [ERROR] 
+    Message : Unauthorized
+    Status  : 401
+    Stack   : Error: Unauthorized
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:9:11)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:15:59 [INFO] POST /api/issue/create-issue 401 - 6ms
+2026-07-22 16:16:26 [ERROR] 
+    Message : Unauthorized from issue controller
+    Status  : 401
+    Stack   : Error: Unauthorized from issue controller
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:9:11)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:16:26 [INFO] POST /api/issue/create-issue 401 - 6ms
+2026-07-22 16:17:17 [ERROR] 
+    Message : Unauthorized 
+    Status  : 401
+    Stack   : Error: Unauthorized 
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:9:11)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:17:17 [INFO] POST /api/issue/create-issue 401 - 5ms
+2026-07-22 16:17:20 [ERROR] 
+    Message : Unauthorized 
+    Status  : 401
+    Stack   : Error: Unauthorized 
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:9:11)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:17:20 [INFO] POST /api/issue/create-issue 401 - 2ms
+2026-07-22 16:17:34 [ERROR] 
+    Message : Unauthorized 
+    Status  : 401
+    Stack   : Error: Unauthorized 
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:9:11)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:17:34 [INFO] POST /api/issue/create-issue 401 - 5ms
+2026-07-22 16:17:35 [ERROR] 
+    Message : Unauthorized 
+    Status  : 401
+    Stack   : Error: Unauthorized 
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:9:11)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:17:35 [INFO] POST /api/issue/create-issue 401 - 1ms
+2026-07-22 16:18:15 [INFO] POST /api/auth/login 200 - 1855ms
+2026-07-22 16:18:20 [ERROR] 
+    Message : Unauthorized 
+    Status  : 401
+    Stack   : Error: Unauthorized 
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:9:11)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:18:20 [INFO] POST /api/issue/create-issue 401 - 1ms
+2026-07-22 16:18:29 [ERROR] 
+    Message : Unauthorized 
+    Status  : 401
+    Stack   : Error: Unauthorized 
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:9:11)
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\utility\catchAsync.ts:5:21)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\route.js:117:3)
+    at handle (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\lib\layer.js:152:17)
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:295:15
+    at processParams (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:582:12)
+    at next (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\router\index.js:291:5)
+  
+2026-07-22 16:18:29 [INFO] POST /api/issue/create-issue 401 - 1ms
+2026-07-22 16:29:43 [INFO] POST /api/auth/login 200 - 373ms
+2026-07-22 16:29:46 [ERROR] 
+    Message : You are not authorized to access this resource
+    Status  : 403
+    Stack   : Error: You are not authorized to access this resource
+    at <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:43:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+  
+2026-07-22 16:29:46 [INFO] POST /api/issue/create-issue 403 - 251ms
+2026-07-22 16:30:16 [ERROR] 
+    Message : bind message supplies 4 parameters, but prepared statement "" requires 5
+    Status  : undefined
+    Stack   : error: bind message supplies 4 parameters, but prepared statement "" requires 5
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:7:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:12:18)
+  
+2026-07-22 16:30:16 [INFO] POST /api/issue/create-issue 500 - 2282ms
+2026-07-22 16:31:59 [INFO] POST /api/auth/login 200 - 329ms
+2026-07-22 16:48:26 [INFO] POST /api/auth/login 200 - 2369ms
+2026-07-22 16:48:44 [INFO] POST /api/issue/create-issue 201 - 2203ms
+2026-07-22 16:54:15 [ERROR] 
+    Message : An issue with this title already exists.
+    Status  : 409
+    Stack   : Error: An issue with this title already exists.
+    at Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:18:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:14:18)
+  
+2026-07-22 16:54:15 [INFO] POST /api/issue/create-issue 409 - 506ms
+2026-07-22 17:54:06 [ERROR] 
+    Message : An issue with this title already exists.
+    Status  : 409
+    Stack   : Error: An issue with this title already exists.
+    at Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:18:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:13:18)
+  
+2026-07-22 17:54:06 [INFO] POST /api/issue/create-issue 409 - 2512ms
+2026-07-22 17:58:21 [INFO] POST /api/issue/create-issue 201 - 2761ms
+2026-07-22 17:59:12 [INFO] POST /api/auth/login 200 - 2437ms
+2026-07-22 17:59:20 [INFO] POST /api/issue/create-issue 201 - 747ms
+2026-07-22 18:00:02 [ERROR] 
+    Message : An issue with this title already exists.
+    Status  : 409
+    Stack   : Error: An issue with this title already exists.
+    at Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:18:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:12:18)
+  
+2026-07-22 18:00:02 [INFO] POST /api/issue/create-issue 409 - 2506ms
+2026-07-22 18:00:15 [INFO] POST /api/issue/create-issue 201 - 2729ms
+2026-07-22 18:01:11 [ERROR] 
+    Message : 
+    Status  : undefined
+    Stack   : AggregateError [ETIMEDOUT]: 
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\middleware\auth.middleware.ts:25:22)
+  
+2026-07-22 18:01:11 [INFO] POST /api/issue/create-issue 500 - 22302ms
+2026-07-22 18:01:18 [INFO] POST /api/issue/create-issue 201 - 3788ms
+2026-07-22 18:01:38 [ERROR] 
+    Message : new row for relation "issues" violates check constraint "issues_description_check"
+    Status  : undefined
+    Stack   : error: new row for relation "issues" violates check constraint "issues_description_check"
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:20:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:12:18)
+  
+2026-07-22 18:01:38 [INFO] POST /api/issue/create-issue 500 - 3257ms
+2026-07-22 18:01:55 [ERROR] 
+    Message : new row for relation "issues" violates check constraint "issues_description_check"
+    Status  : undefined
+    Stack   : error: new row for relation "issues" violates check constraint "issues_description_check"
+    at F:\NEXT LEVEL 2\Assignment\assignmentl2a2\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createIssueIntoDB (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.services.ts:20:18)
+    at async <anonymous> (F:\NEXT LEVEL 2\Assignment\assignmentl2a2\src\modules\issues\issues.controller.ts:12:18)
+  
+2026-07-22 18:01:55 [INFO] POST /api/issue/create-issue 500 - 772ms
+2026-07-22 18:02:10 [INFO] POST /api/issue/create-issue 201 - 2734ms

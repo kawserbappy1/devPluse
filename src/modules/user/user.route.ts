@@ -11,7 +11,19 @@ router.get(
   auth(USER_ROLE.maintainer),
   userController.getAllUser,
 );
-router.get("/get-single-user/:id", userController.getSingleUser);
-router.put("/update-user/:id", userController.updateUser);
-router.delete("/delete-user/:id", userController.deleteUser);
+router.get(
+  "/get-single-user/:id",
+  auth(USER_ROLE.maintainer, USER_ROLE.contributor),
+  userController.getSingleUser,
+);
+router.put(
+  "/update-user/:id",
+  auth(USER_ROLE.maintainer, USER_ROLE.contributor),
+  userController.updateUser,
+);
+router.delete(
+  "/delete-user/:id",
+  auth(USER_ROLE.maintainer),
+  userController.deleteUser,
+);
 export const userRouter = router;

@@ -33,8 +33,8 @@ const auth = (...roles: ROLES[]) => {
     // console.log(userData);
 
     // 4. check user is exists
-    if (userData.rows.length === 0) {
-      throw new AppError(401, "User not found ");
+    if (!user) {
+      throw new AppError(401, "User not found");
     }
     // console.log("Auth role ==>, ", user.role);
 
@@ -44,6 +44,7 @@ const auth = (...roles: ROLES[]) => {
     }
     //6. set user
     req.user = user;
+
     next();
   });
 };
